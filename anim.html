@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinu Prime Store | Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #080808;
+            --prime-gold: #d4af37;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --text-main: #ffffff;
+            --text-dim: #888888;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(8, 8, 8, 0.85);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--prime-gold);
+            text-transform: uppercase;
+        }
+
+        /* Hero with Certificate */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+            padding: 0 10%;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(45px, 7vw, 90px);
+            margin-bottom: 20px;
+        }
+
+        .hero span { color: var(--prime-gold); }
+
+        .cert-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            border: 1px solid var(--prime-gold);
+            color: var(--prime-gold);
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: 700;
+            transition: 0.4s;
+            text-transform: uppercase;
+        }
+
+        .cert-btn:hover {
+            background: var(--prime-gold);
+            color: #000;
+        }
+
+        /* Services & Projects Grid */
+        .container { padding: 80px 8%; text-align: center; }
+        
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: var(--prime-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 100px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 50px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .card:hover {
+            border-color: var(--prime-gold);
+            transform: translateY(-12px);
+            background: rgba(212, 175, 55, 0.08);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        .card h3 { font-size: 22px; margin-bottom: 10px; }
+        .card p { color: var(--text-dim); font-size: 14px; }
+
+        /* Projects Section */
+        .project-card {
+            background: linear-gradient(145deg, #111, #050505);
+            border: 1px solid #222;
+        }
+
+        .contact-footer { padding: 60px 0; border-top: 1px solid #111; }
+        .phone { font-size: 24px; color: var(--prime-gold); text-decoration: none; font-weight: 700; }
+
+        footer { padding: 30px; color: #444; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Dinu Prime Store</div>
+    </nav>
+
+    <section class="hero">
+        <h1 data-aos="fade-up">South Asian Best <span>Web Designer.</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200">Official Portfolio of Induwara Dineth.</p>
+        <a href="cerificate (2).pdf" target="_blank" class="cert-btn" data-aos="zoom-in" data-aos-delay="400">View My Certificate</a>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title" data-aos="fade-right">Our Services</h2>
+        <div class="grid">
+            <a href="https://wa.me/94716055582?text=I%20want%20to%20order%20Web%20Design" class="card" data-aos="fade-up">
+                <h3>Web Design</h3>
+                <p>Premium & Responsive layouts.</p>
+            </a>
+            <a href="https://wa.me/94716055582?text=I%20want%20to%20order%20Logo%20Design" class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Logo Design</h3>
+                <p>Creative visual identities.</p>
+            </a>
+            <a href="https://wa.me/94716055582?text=I%20want%20to%20order%20Game%20Development" class="card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Game Development</h3>
+                <p>Interactive gaming experiences.</p>
+            </a>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-right">My Masterpieces</h2>
+        <div class="grid">
+            <a href="https://sunzunx01-ai.github.io/myall/" target="_blank" class="card project-card" data-aos="zoom-in">
+                <h3>My All Projects</h3>
+                <p>Explore my entire collection.</p>
+            </a>
+            <a href="https://sunzunx01-ai.github.io/adminpanel/" target="_blank" class="card project-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>Admin Panel</h3>
+                <p>Advanced dashboard system.</p>
+            </a>
+            <a href="https://sunzunx01-ai.github.io/DINUCREATIVEDESIGNER/" target="_blank" class="card project-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Creative Designer</h3>
+                <p>Showcase of visual arts.</p>
+            </a>
+            <a href="https://denex.durable.site/" target="_blank" class="card project-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3>Denex Site</h3>
+                <p>Modern business solution.</p>
+            </a>
+        </div>
+
+        <div class="contact-footer" data-aos="fade-up">
+            <p style="color: var(--text-dim); margin-bottom: 10px;">Contact Me</p>
+            <a href="tel:0716055582" class="phone">0716055582</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>DINU PRIME STORE &copy; 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
